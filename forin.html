@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial">
+        <title>For in loop</title>
+        <link rel="stylesheet" type="text/css" href="./style/style.css">
+    </head>
+    <body>
+        <script>
+            var family = new Array ("Kemi", "Yinka", "Opeyemi", "Oyinkan", "Wale", "Niyi", "Ayomipo");
+            var personal = new Array ("Lasisi", 24, "Instructor", "single", "ogun")
+            /*
+            for (variable in array_name) {
+                statement
+            }
+            */
+           for (var i in family){
+            document.write ("Lasisi Family include"+family[i]);
+            document.write("<br>")
+           }
+
+           for (var a in personal) {
+            document.write(personal[a], "<br>")
+           }
+        </script>
+    </body>
+
+</html>

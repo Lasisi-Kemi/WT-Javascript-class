@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial">
+        <title>Classwork for Javascript</title>
+        <link rel="stylesheet" type="text/css" href="./style/style.css">
+        <!--<script src="./js/index.js"></script>-->
+    </head>
+    <body>
+        <script>
+            //direct create of object
+            /*var house = new Object ();
+            house.location = "Ijebu Ode";
+            house.color = "Brown and cream";
+            house.age = 25;
+            house.year = "1997"
+
+            //document.write(house.location)
+            for (var i in house) {
+                document.write(house[i], "<br>")
+            }*/
+
+            //another way of direct create of object 
+            //var house = new Object();
+            house = {
+                location: "Ijebu Ode",
+                color: "Brown and cream",
+                age: 25,
+                year: "1997"
+            }
+            var loc = "location"
+
+            document.write(house[loc], "<br>");
+            document.write(house["age"])
+        </script>
+    </body>
+
+</html>
