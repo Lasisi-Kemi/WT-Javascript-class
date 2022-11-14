@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial">
+        <title>Classwork for Javascript</title>
+        <link rel="stylesheet" type="text/css" href="./style/style.css">
+    </head>
+    <body>
+       <h1>My web page</h1>
+       <p id="ladies"></p>
+
+       <script>
+            //const arr = ["apple", "dog", "banana", "egg", "citrus"];
+            //const arr2 = [1, 2, 3, 24, 43, 55];
+            
+            //function sortfunction(a, b) {
+            //    //console.log(a, b)
+            //    //return a - b //ascending
+            //    return b -a //descending
+            //}
+            //console.log(arr.sort());
+            //console.log(arr.sort().reverse())
+            //
+            //console.log(arr2.sort(sortfunction))
+            //let arr = ["Pears"];
+            //let arr2 = new Array();
+            //arr[1] = "Apples";
+            //arr[2] = "Banana";
+            //console.log(arr.length);
+            //let arr = ["Pear", 500, function item(){console.log("I am an item")}, {name: "Rethabile"}];
+
+            //arr[2]();
+            //how to get the last element in an array
+            //alway remember that the length is one more than the last index because arrays are zero indexed
+            //console.log(arr[arr.length-1]);
+            //another means of getting the last array index
+            //console.log(arr.at(-1));
+            //pop, push, shift and unshift
+            //push appends an element to the end of an array
+            //shift removes and returns the first element of an array
+            //pop removes and returns the last element of an array
+            //unshift appens an element to the front of the array
+            //arr.push("New array");
+            //
+            //const firstElement = arr.shift();
+            //const lastElement = arr.pop();
+            //arr.unshift("adds")
+            //console.log(arr);
+            //console.log(firstElement);
+            ////console.log(lastElement);
+           ////multi-dimensional array
+            //const arr = [[1,2,3], [2,3,4], [4,5,6]];
+//
+            //console.log(arr[2][2]);
+            ////splice, slice, forEach, nap, reduce, filter, concat
+            //const arr = [1,2,3];
+            //const arr2 = [4,5,6];
+//
+            //console.log(arr.concat(arr2))
+            //const obj = {
+            //    name: "Nelly",
+            //    role: "software engineer"
+            //}
+            //delete obj.name;
+//
+            //console.log(obj)
+            //splice can add element, delete from element from an array
+            //arr.splice(start, nuberOfElementToDelete, elementToBeAddedInTheArray)
+            //how many element to delete from the starting point with the starting point included
+            //const arr = [1,2,3,4,5]
+            //const value = arr.splice(1, 1);
+            //const value = arr.splice(1, 0, 3,4,6)
+            //const value = arr.splice(arr.length - 1, 0, 1,2,3,4,5)
+            //console.log(arr);
+            //console.log(value);
+            //let arr = "dsfasdadf".split("");
+            //console.log(arr);
+            //slice
+            //let arr = ['a', 'b', 1, 2, 3];
+            //arr.slice(start, end);
+            //console.log(arr.slice(1, 3));
+            //console.log(arr.slice(0, 3))
+            //higher order function -- These are functions that takes other functions as arguments or functions that 
+            //returns other functions
+            //reduce
+            const arr = [1,2,3,4,5];
+
+            const response = arr.reduce(function(accumulator, item ) {
+                //console.log(accumulator, item)
+                //return accumulator
+                const value = accumulator + item;
+                //console.log(accumulator,item)
+                console.log(value)
+                return value
+            }, 0)
+            //let sum = 0;
+            //for (let n of arr)
+            //sum += n;
+            //console.log(sum)
+            //a = 0, c= 1 =>a = 1
+            //a = 1, c = 2 => a = 3
+            //a = 3, c = 3 => a = 6
+            //a = 6, c = 4 => a = 10
+            //a = 10, c = 5 => a = 15
+            //const number = arr.reduce((accumulator, currentValue) => {
+            //    return accumulator + currentValue;
+            //}, 0);
+//
+            //console.log(number)
+       </script>
+    </body>
+
+</html>

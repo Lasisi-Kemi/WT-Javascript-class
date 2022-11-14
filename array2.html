@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial">
+        <title>Javascript condition</title>
+        <link rel="stylesheet" type="text/css" href="./style/style.css">
+        <!--<script src="./js/index.js"></script>-->
+    </head>
+    <body>
+        <script>
+            const arr = [1, 2, 3, 4, 5];
+
+            function reverseArr() {
+                const newArr = arr.slice(0, arr.length)
+                //const newArr = [...arr] instead of slice
+                newArr.reverse();
+                return newArr;
+                //we can also add new array to hold our result
+                //using slice to avoid our result mutating 
+            }
+
+            function multiplyTwo() {
+                const result = []
+                for(let k of arr) {
+                    result.push(k * 2);   
+                }
+                return result;
+            }
+
+            const responseOne = reverseArr();
+            const responseTwo = multiplyTwo();
+
+            console.log(responseOne, responseTwo)
+        </script>
+    </body>
+
+</html>

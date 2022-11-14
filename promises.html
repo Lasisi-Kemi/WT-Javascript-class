@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial">
+        <title>Javascript condition</title>
+        <link rel="stylesheet" type="text/css" href="./style/style.css">
+        <!--<script src="./js/index.js"></script>-->
+    </head>
+    <body>
+        <script>   
+            //callback funnction is when are particular functions finish, it then call it ouut
+            //Javascript will run code in the sequence thy are called
+            //callback:you want a function to do something when other function is completed
+            //function firstDeclaredFunction() {
+            //    consle.log("I am the first")
+            //}
+            //
+            //function secondDeclaredFunction(){
+            //    console.log("I am the second")
+            //}
+            //
+            //
+            //secondDeclaredFunction();
+            //firstDeclaredFunction();
+            //function consoleLogMyResult(result){
+            //    console.log(result)
+            //}
+//
+            //function longRunningFunctionThatGiveResult(cb){
+            //    //after the long running operation has finished pass result to functionn 
+            //   cb("result");
+            //}
+            //longRunningFunctionThatGiveResult(consoleLogMyResult)
+            //function getUserName(cb){
+            //    const name = prompt("Please enter your name");
+            //    cb(name)
+            //}
+            //
+            //function consoleLogName(name){
+            //    console.log(name, "I am from consoleLogName")
+            //}
+            //
+            //function alertName(name) {
+            //    alert(name)
+            //}
+            //getUserName(consoleLogName);
+            //seting time to a call back function
+            //function newfunction() {
+            //    console.log("Tada!!!")
+            //}
+            //setTimeout(newfunction, 5000)
+            //Promises
+            //syntax promiise
+            //new Promise(function(resolve, reject) {
+            //
+            //})
+            let something = new Promise(function(resolve, reject) {
+                setTimeout(resolve("I am successful"), 1000)
+            });
+            console.log(something.then((result) => console.log(result)))
+        </script>
+    </body>
+
+</html>

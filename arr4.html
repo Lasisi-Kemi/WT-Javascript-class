@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial">
+        <title>Javascript condition</title>
+    </head>
+    <body>
+        <script>
+            //const name = "Folashade";
+            //console.log(name.substr(2, 4))
+            //console.log(name.substring(2, 4))
+
+            //map, reduce, filter (Higher order function)
+            //map
+            const users = [
+                {
+                    name: "Gospel",
+                    surname: "Charles",
+                    age: 12,
+                    occupation: "CEO Flutterwaves"
+                },
+                {
+                    name: "Elian",
+                    surname: "Imasunu",
+                    age: 17,
+                    occupation: "CEO Flutterwaves"  
+                },
+                {
+                    name: "Grace",
+                    surname: "Osai",
+                    age: 15,
+                    occupation: "Founder paystack"
+                }
+            ];
+
+            function mapUsers (user, index) {
+                //console.log(user, index)
+                const modifiedUser = {
+                    fullname: user.name + user.surname,
+                    age: user.age,
+                    occupation: user.occupation
+                }
+                return modifiedUser;
+            }
+
+            const updateUser = users.map(mapUsers)
+
+            console.log(updateUser)
+        </script>
+    </body>
+
+</html>
